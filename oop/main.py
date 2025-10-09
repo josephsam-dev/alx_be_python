@@ -1,10 +1,9 @@
-from polymorphism_demo import Rectangle, Circle, Triangle  # <-- add Triangle here
+from polymorphism_demo import Rectangle, Circle
 
 def main():
     shapes = [
         Rectangle(10, 5),
-        Circle(7),
-        Triangle(6, 4)  # <-- add a Triangle instance
+        Circle(7)
     ]
 
     for shape in shapes:

@@ -2,7 +2,8 @@ import math
 
 class Shape:
     def area(self):
-        raise NotImplementedError("Subclasses must override the area() method")
+        """Method to compute area. Must be overridden by subclasses."""
+        raise NotImplementedError("Subclasses must implement this method.")
 
 class Rectangle(Shape):
     def __init__(self, length, width):
@@ -17,12 +18,4 @@ class Circle(Shape):
         self.radius = radius
 
     def area(self):
-        return math.pi * (self.radius ** 2)
-class Triangle(Shape):
-    def __init__(self, base, height):
-        self.base = base
-        self.height = height
-
-    def area(self):
-        return 0.5 * self.base * self.height
-
+        return math.pi * self.radius ** 2
